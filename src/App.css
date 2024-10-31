@@ -1,0 +1,145 @@
+a{
+    text-decoration: none;
+                                                
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.h{
+    font-family:  Impact;
+}
+
+/* Центрируем весь контент по горизонтали и вертикали */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f0f8ff; /* Светло-голубой фон */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Стили для заголовка */
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+
+}
+
+/* Стили для текста под заголовком */
+.container div {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Стили для кнопок */
+.game-button {
+    background-color: #007bff; /* Голубой цвет кнопок */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 200px; /* Квадратная форма кнопки */
+    cursor: pointer;
+}
+
+/* Hover эффект для кнопок */
+.game-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
+/* Основной контейнер, центрируем все */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    font-family: 'Roboto', sans-serif;
+    transition: backgound 0.5s ease-in-out;
+}
+
+/* Стиль для заголовка */
+h2, h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Плавное появление заголовков */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container2 div, p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Кнопки */
+.button2 {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Hover эффект для кнопок */
+.button2:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Поле ввода */
+input[type='number'], input[type='text'] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+    width: 200px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+input[type='number']:focus, input[type='text']:focus {
+    border-color: #0056b3;
+}
+
+/* Эффект плавного появления и исчезания */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: scale(0.9); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.1); }
+}
+
+/* Анимация плавного перехода между раундами */
+.round-change {
+    animation: fadeInOut 2s ease-in-out;
+}
